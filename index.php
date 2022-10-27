@@ -34,12 +34,19 @@ require 'arrays.php';
         <?php
         foreach ($authors as $author) : ?>
             <div class="frame">
-                <img src="<?php echo $author ?>" alt="author">
+                <img src="<?php echo $author; ?>" alt="author">
             </div>
         <?php endforeach; ?>
 
     </section>
-    <section class="cover-array"></section>
+    <section class="cover-array">
+        <?php
+        foreach ($books as $book) : ?>
+            <div class="cover">
+                <img src="<?php echo $book['cover']; ?>" alt="cover">
+            </div>
+        <?php endforeach; ?>
+    </section>
 </body>
 
 </html>
