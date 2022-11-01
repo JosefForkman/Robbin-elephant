@@ -14,31 +14,33 @@ require 'arrays.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/scripts.js" defer></script>
     <title>Elephant in the room</title>
 </head>
 
 <body>
     <header>
         <h1>Fantasy</h1>
-        <div class="date">
-            <h2>Current date</h2>
-            <p>
-                <?php echo $currentDate; ?>
-            </p>
-        </div>
+        <div class="date-container">
+            <button>Show current date</button>
+            <div class="date">
+                <h2>Current date</h2>
+                <p>
+                    <?php echo $currentDate; ?>
+                </p>
+            </div>
 
+        </div>
     </header>
 
+    <h3>Authors</h3>
     <section class="authors-frame">
-
         <?php
-        foreach ($authors as $author) : ?>
-            <div class="frame">
-                <img src="<?php echo $author; ?>" alt="author">
-            </div>
-        <?php endforeach; ?>
+        printAuthors($authors)
+        ?>
 
     </section>
+    <h3>Covers</h3>
     <section class="cover-array">
         <?php
         foreach ($books as $book) : ?>
@@ -47,6 +49,48 @@ require 'arrays.php';
             </div>
         <?php endforeach; ?>
     </section>
+    <section class="author-highlight">
+        <div class="random-author">
+            <h3>Author of the day!</h3>
+            <p>(Refreash the page for a new author)</p>
+            <p>
+                <?php
+                authorHighlight($randomAuthor);
+                ?>
+            </p>
+
+        </div>
+    </section>
+
+    <div class="quotes">
+        <h3>Quotes from some of the books</h3>
+        <?php
+        foreach ($quotes as $quote) {
+            foreach ($quote as $recite) {
+                echo "$recite: <br>";
+            }
+        }
+        ?>
+    </div>
+
+    <?php
+    if (isset($_POST['email'])) {
+        $email = $_POST['email'];
+    }
+
+    ?>
+    <h3>Sign up to our newsletter!</h3>
+    <p>
+        <?php
+        echo "$email has successfully been signed up";
+        ?>
+    </p>
+    <form action="index.php" method="post">
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="name@mail.com">
+    </form>
+
+
 </body>
 
 </html>

@@ -23,3 +23,23 @@ $books = [
     ["cover" => "covers/1637331669-51tW-UJVfHL._SL500_.jpg"],
     ["cover" => "covers/51Ft2jg3Q9L._AC_SY780_.jpg"]
 ];
+
+$quotes = [
+    ["stormlight Archive", "'Life Before Death'", "'honor is dead. But I'll see what I can do'"],
+    ["Eragon", "'He's acting as foolish as a kitten... '", "'Learn to see what you are looking at'"],
+    ["Green Bone Saga", "'Screw you Hilo! she snapped. I can kill my ex-boyfriends myself'", "'Out of small resentment, springs great wars'"],
+    ["Lord of The Rings", "'Not all those who wanders are lost'", "'Even the smallest person can change the course of the future'"]
+];
+
+
+
+$randomAuthor = [
+    $brandonSanderson,
+    $tolkien,
+    $fondaLee,
+    $brendWeeks,
+    $christopherPaolini,
+    $markLawrence,
+    $rebeccaKuang,
+    $suzanneCollins
+];
