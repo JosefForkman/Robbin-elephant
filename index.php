@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 require 'variables.php';
 require 'functions.php';
 require 'arrays.php';
@@ -45,14 +46,15 @@ require 'arrays.php';
         <?php
         foreach ($books as $book) : ?>
             <div class="cover">
-                <img src="<?php echo $book['cover']; ?>" alt="cover">
+                <a href="<?php echo $book['link'] ?>" target="_blank"><img src="<?php echo $book['cover']; ?>" alt="cover"></a>
             </div>
         <?php endforeach; ?>
     </section>
+
     <section class="author-highlight">
         <div class="random-author">
             <h3>Author of the day!</h3>
-            <p>(Refreash the page for a new author)</p>
+            <p>(Refresh the page for a new author)</p>
             <p>
                 <?php
                 authorHighlight($randomAuthor);
@@ -63,14 +65,14 @@ require 'arrays.php';
     </section>
 
     <div class="quotes">
-        <h3>Quotes from some of the books</h3>
+        <p>Quotes from some of the books</p>
         <?php
-        foreach ($quotes as $quote) {
-            foreach ($quote as $recite) {
-                echo "$recite: <br>";
-            }
-        }
-        ?>
+        foreach ($quotes as $quote)
+            foreach ($quote as $recite) : ?>
+            <p>
+                <?php echo $recite ?>
+            </p>
+        <?php endforeach; ?>
     </div>
 
     <?php
@@ -79,18 +81,19 @@ require 'arrays.php';
     }
 
     ?>
-    <h3>Sign up to our newsletter!</h3>
-    <p>
-        <?php
-        echo "$email has successfully been signed up";
-        ?>
-    </p>
-    <form action="index.php" method="post">
-        <label for="email">Email</label>
-        <input type="email" name="email" placeholder="name@mail.com">
-    </form>
+    <div class="form-container">
+        <h3>Sign up to our newsletter!</h3>
+        <p>
+            <?php
+            echo "$email has successfully been signed up";
+            ?>
+        </p>
+        <form action="index.php" method="post">
+            <label for="email"> Your email</label>
+            <input type="email" name="email" placeholder="name@mail.com">
+        </form>
 
-
+    </div>
 </body>
 
 </html>

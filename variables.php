@@ -2,10 +2,12 @@
 
 declare(strict_types=1);
 
+
+
 $brandonSanderson = [
     "picture" => "authors/sanderson-1-superJumbo.jpeg",
     "name" => "Brand Sanderson",
-    "is_alive" => true,
+    "is_active" => true,
     "age" => 46,
     "known_for" => "'Stormlight Archive'"
 ];
@@ -13,7 +15,7 @@ $brandonSanderson = [
 $tolkien = [
     "picture" => "authors/jrr-tolkien-9508428-1-402.jpeg",
     "name" => "J.R.R. Tolkien",
-    "is_alive" => false,
+    "is_active" => false,
     "age" => "dead (1892-1973)",
     "known_for" => "'Lord of the Rings'"
 ];
@@ -21,7 +23,7 @@ $tolkien = [
 $fondaLee = [
     "picture" => "authors/Fonda Lee.jpeg",
     "name" => "Fonda Lee",
-    "is_alive" => true,
+    "is_active" => true,
     "age" => 43,
     "known_for" => "'Green bone saga'"
 ];
@@ -29,7 +31,7 @@ $fondaLee = [
 $brendWeeks = [
     "picture" => "authors/Brent-Weeks.jpeg",
     "name" => "Brend Weeks",
-    "is_alive" => true,
+    "is_active" => true,
     "age" => 45,
     "known_for" => "'Lightbringer'"
 ];
@@ -37,7 +39,7 @@ $brendWeeks = [
 $christopherPaolini = [
     "picture" => "authors/Christopher Paolini.jpeg",
     "name" => "Christopher Paolini",
-    "is_alive" => true,
+    "is_active" => true,
     "age" => 38,
     "known_for" => "'Inheritance cycle'"
 ];
@@ -45,7 +47,7 @@ $christopherPaolini = [
 $markLawrence = [
     "picture" => "authors/Mark Lawrence.jpeg",
     "name" => "mark Lawrence",
-    "is_alive" => true,
+    "is_active" => true,
     "age" => 56,
     "known_for" => "'The broken empire'"
 ];
@@ -53,7 +55,7 @@ $markLawrence = [
 $rebeccaKuang = [
     "picture" => "authors/rf-kuang-author-image-min.webp",
     "name" => "Rebecca Kuang",
-    "is_alive" => true,
+    "is_active" => true,
     "age" => 26,
     "known_for" => "'Poppy War'"
 ];
@@ -61,7 +63,7 @@ $rebeccaKuang = [
 $suzanneCollins = [
     "picture" => "authors/Suzanne Collins.jpg",
     "name" => "Suzanne Collins",
-    "is_alive" => true,
+    "is_active" => true,
     "age" => 60,
     "known_for" => "'The hunger games'"
 ];
