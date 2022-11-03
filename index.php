@@ -1,7 +1,7 @@
 <?php
 
 declare(strict_types=1);
-
+// Fetch the other php files
 require 'variables.php';
 require 'functions.php';
 require 'arrays.php';
@@ -43,6 +43,7 @@ require 'arrays.php';
     </section>
     <h3>Covers</h3>
     <section class="cover-array">
+        <!-- Prints out the book covers and links -->
         <?php
         foreach ($books as $book) : ?>
             <div class="cover">
@@ -66,6 +67,7 @@ require 'arrays.php';
 
     <div class="quotes">
         <p>Quotes from some of the books</p>
+        <!-- Print out the quotes -->
         <?php
         foreach ($quotes as $quote)
             foreach ($quote as $recite) : ?>
@@ -76,6 +78,7 @@ require 'arrays.php';
     </div>
 
     <?php
+    // If email is seat add it to a variable, otherwise make it an empty string
     if (isset($_POST['email'])) {
         $email = $_POST['email'];
     } else {
@@ -87,6 +90,7 @@ require 'arrays.php';
         <h3>Sign up to our newsletter!</h3>
         <p>
             <?php
+            // If email has a value print out that the user has "signed up"
             if ($email != "") {
                 echo "$email has successfully been signed up";
             }
