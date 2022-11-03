@@ -6,7 +6,7 @@ Text about the project and why it exists. This would also be a great place to li
 
 # Installation
 
-Add the installation instructions.
+No installation required.
 
 # Code Review
 
@@ -22,5 +22,5 @@ Code review written by [Jane Doh](https://github.com/username).
 
 Tested by the following people:
 
-1. Jane Doe
-2. John Doe
+1. Axel Enghamre
+2. Magnus Varagvinter
