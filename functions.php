@@ -30,7 +30,7 @@ function authorHighlight($name)
     }
 }
 
-// Loops through the authoes array and prints out their image.
+// Loops through the author array and prints out their image.
 function printAuthors($authors)
 {
     foreach ($authors as $author) : ?>
