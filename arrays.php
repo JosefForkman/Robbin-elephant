@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+// List of the pictures of the authors
 $authors = [
     "authors/Brent-Weeks.jpeg",
     "authors/Christopher Paolini.jpeg",
@@ -13,6 +14,7 @@ $authors = [
     "authors/Suzanne Collins.jpg"
 ];
 
+// List of the book covers and link to the book on adlibris
 $books = [
     ["cover" => "covers/way-kings-stormlight-archive-brandon-sanderson-cover.jpeg", "link" => "https://www.adlibris.com/se/bok/the-way-of-kings-book-one-of-the-stormlight-archive-9780765365279"],
     ["cover" => "covers/the-poppy-war-2.jpeg", "link" => "https://www.adlibris.com/se/bok/poppy-war-9780008239848"],
@@ -24,6 +26,7 @@ $books = [
     ["cover" => "covers/51Ft2jg3Q9L._AC_SY780_.jpg", "link" => "https://www.adlibris.com/se/bok/jade-city-9780356510514"]
 ];
 
+// List of quotes froom the books
 $quotes = [
     ["stormlight Archive", "'Life Before Death'", "'honor is dead. But I'll see what I can do'"],
     ["Eragon", "'He's acting as foolish as a kitten... '", "'Learn to see what you are looking at'"],
@@ -33,7 +36,7 @@ $quotes = [
 ];
 
 
-
+// List of the authors
 $randomAuthor = [
     $brandonSanderson,
     $tolkien,
