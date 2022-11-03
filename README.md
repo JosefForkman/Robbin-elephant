@@ -1,8 +1,10 @@
 <img src="https://media.giphy.com/media/38TVRhxujjyjO3fM2C/giphy.gif" width="100%">
 
-# Project Title
+# Fantasy Genre
 
-Text about the project and why it exists. This would also be a great place to link the project on One.com.
+Learn more about some of my favorite fantasy authors and their works!
+
+my site [https://robinpn.se/]
 
 # Installation
 
@@ -23,4 +25,4 @@ Code review written by [Jane Doh](https://github.com/username).
 Tested by the following people:
 
 1. Axel Enghamre
-2. Magnus Varagvinter
+2. Magnus Waragvinter
