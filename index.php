@@ -78,6 +78,8 @@ require 'arrays.php';
     <?php
     if (isset($_POST['email'])) {
         $email = $_POST['email'];
+    } else {
+        $email = "";
     }
 
     ?>
@@ -85,7 +87,9 @@ require 'arrays.php';
         <h3>Sign up to our newsletter!</h3>
         <p>
             <?php
-            echo "$email has successfully been signed up";
+            if ($email != "") {
+                echo "$email has successfully been signed up";
+            }
             ?>
         </p>
         <form action="index.php" method="post">
