@@ -8,7 +8,7 @@ my site [https://robinpn.se/]
 
 # Installation
 
-No installation required.
+Clone my repository on github and open it on your local IDE
 
 # Code Review
 
