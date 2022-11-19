@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 // Fetch the other php files
-require 'variables.php';
+require 'authors.php';
 require 'functions.php';
-require 'arrays.php';
+require 'data.php';
 ?>
 
 <!DOCTYPE html>

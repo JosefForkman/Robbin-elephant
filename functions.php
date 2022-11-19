@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-require "arrays.php";
-require "variables.php";
+require "data.php";
+require "authors.php";
 
 
 
