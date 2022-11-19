@@ -5,6 +5,14 @@ declare(strict_types=1);
 require 'authors.php';
 require 'functions.php';
 require 'data.php';
+
+// If email is seat add it to a variable, otherwise make it an empty string
+if (isset($_POST['email'])) {
+    $email = $_POST['email'];
+} else {
+    $email = "";
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -77,15 +85,6 @@ require 'data.php';
         <?php endforeach; ?>
     </div>
 
-    <?php
-    // If email is seat add it to a variable, otherwise make it an empty string
-    if (isset($_POST['email'])) {
-        $email = $_POST['email'];
-    } else {
-        $email = "";
-    }
-
-    ?>
     <div class="form-container">
         <h3>Sign up to our newsletter!</h3>
         <p>
